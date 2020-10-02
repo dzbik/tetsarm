@@ -1,0 +1,41 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "agwParams": {
+      "type": "object"
+    }
+  },
+  "resources": [
+
+  ],
+  "outputs": {
+    "hostname": {
+      "type": "string",
+      "value": "aquasec.globaldirect.intraxa"
+    },
+    "certificateName": {
+      "type": "string",
+      "value": "aquasec"
+    },
+    "backendAddresses": {
+      "type": "array",
+      "value": [
+        {
+          "ipAddress": "1.1.1.1",
+          "fqdn": null
+        }
+      ]
+    },
+    "backendSettings": {
+      "type": "object",
+      "value": {
+        "Port": 8080,
+        "Protocol": "Http",
+        "cookieBasedAffinity": "Enabled",
+        "requestTimeout": 20,
+        "affinityCookieName": "ApplicationGatewayAffinity"
+      }
+    }
+  }
+}
