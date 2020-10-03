@@ -12,7 +12,7 @@
   "outputs": {
     "hostname": {
       "type": "string",
-      "value": "aquasec.globaldirect.intraxa"
+      "value": "some.hostname.com"
     },
     "certificateName": {
       "type": "string",
